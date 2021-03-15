@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bảng cửu chương</title>
+</head>
+<body>
+<script>
+    /*let pheptinh;
+    pheptinh = "<table border='1' width='800' cellspacing='2' cellpadding='5'>"
+    for (i = 1; i <= 10; i++) {
+        pheptinh = pheptinh + "<tr>";
+        for (j = 2; j <= 9; j++) {
+            pheptinh = pheptinh + "<td>"+ j + 'x' + i + '=' + i * j + "</td>";
+        }
+        pheptinh = pheptinh + "</tr>";
+    }
+    pheptinh = pheptinh + "</table>";
+    document.write(pheptinh);*/
+    let sout, i, j;
+    sout = "<table border='1' width='800' cellspacing='2' cellpadding='5'>";
+    i = 2, j = 1;
+    while (j <= 10) {
+        sout = sout + "<tr>";
+        while (i < 10) {
+            sout = sout + "<td>" + i + 'x' + j + '=' + i * j + "</td>";
+            i++;
+        }
+        sout = sout + "</tr>";
+        i = 2;
+        j++;
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+
+</script>
+</body>
+</html>
